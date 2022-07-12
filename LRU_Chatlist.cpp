@@ -45,6 +45,7 @@ void newMessage(node*&head,int idx,string nm,string msg){
 	}
 	else{
 		node* cur=mp[idx];			// Finding the node to be updated
+		msg=msg+cur->message;
 		node* temppre=cur->prev;	// Finding the previous node
 		node* tempnxt=cur->next;   	// Finding the next node
 		if(cur->index!=head->index){   // Checking that the node to be updated is not head pointed node
